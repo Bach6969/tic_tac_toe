@@ -1,0 +1,85 @@
+/* Reset styles and basic box model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body and container styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 3em;
+    color: #2f4f4f;
+    margin-bottom: 30px;
+  }
+  
+  /* Game container and board styling */
+  .game-container {
+    display: inline-block;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #2f4f4f;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Hover effects and interaction feedback */
+  .cell:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+  }
+  
+  /* Reset button styling */
+  #resetButton {
+    padding: 10px 25px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #2f4f4f;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #resetButton:hover {
+    background-color: #1e3c3c;
+  }
+  
+  /* Status message */
+  #statusMessage {
+    font-size: 1.5em;
+    color: #2f4f4f;
+  }
+  
